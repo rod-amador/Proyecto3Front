@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
 
-let playa = require("../../../images/playa.jpg")
-let logo = require ("../../../images/logo.png");
+let fondo = require("../../../images/fondo.jpg")
+let logo = require ("../../../images/logo.jpg");
 
 
 class Login extends Component {
@@ -12,7 +12,7 @@ class Login extends Component {
 
       <main>
 
-        <section style={{backgroundImage:`url(${playa})`}}
+        <section style={{backgroundImage:`url(${fondo})`}}
           className="
           uk-background-blend-luminosity
           uk-background-primary  

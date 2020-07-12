@@ -21,19 +21,23 @@ class Cursos extends Component {
             </p>
  
               <section className="uk-background-muted uk-text-center">
-                <h2>Aprenderás </h2>
-                <ul className="uk-list uk-list-collapse ">                           
-                    <li style={{color:"yellow"}}> <strong>    A potencializar tus finanzas                                 </strong>   </li>
-                    <li style={{color:"green" }}> <strong>    A crear múltiples fuentes de ingresos                        </strong>   </li>
-                    <li style={{color:"brown" }}> <strong>    Dónde y cómo invertir para multiplicar tus ingresos          </strong>   </li>
-                    <li style={{color:"red"   }}> <strong>    A obtener ingresos pasivos permanentes                       </strong>   </li>
-                    <li style={{color:"blue"  }}> <strong>    A jugar con créditos y deudas para hacerte de riqueza propia </strong>   </li> <br/>
-                </ul>                
+
+                    <h2>Aprenderás </h2>
+                    <ul className="uk-list uk-list-collapse ">                           
+                        <li style={{color:"yellow"}}> <strong>    A potencializar tus finanzas                                 </strong>   </li>
+                        <li style={{color:"green" }}> <strong>    A crear múltiples fuentes de ingresos                        </strong>   </li>
+                        <li style={{color:"brown" }}> <strong>    Dónde y cómo invertir para multiplicar tus ingresos          </strong>   </li>
+                        <li style={{color:"red"   }}> <strong>    A obtener ingresos pasivos permanentes                       </strong>   </li>
+                        <li style={{color:"blue"  }}> <strong>    A jugar con créditos y deudas para hacerte de riqueza propia </strong>   </li> <br/>
+                    </ul> 
+
               </section>
                 
-            <p className="uk-text-center">  Con todo esto, <br/> podrás tener las herramientas necesarias a tu disposición                 <br/>
-              para aumentar tus ingresos, obtener libertad financiera  <br/>
-              y salir a flote de cualquier crisis que pueda presentarse.          
+            <p className="uk-text-center">  
+                Con todo esto,                                               <br/> 
+                podrás tener las herramientas necesarias a tu disposición    <br/>
+                para aumentar tus ingresos, obtener libertad financiera      <br/>
+                y salir a flote de cualquier crisis que pueda presentarse.          
             </p>
 
             
@@ -121,12 +125,13 @@ class Cursos extends Component {
                       <article className="uk-width-1-3@m uk-card uk-card-secondary uk-margin-top uk-margin-bottom uk-padding">
                         <h4 className="uk-text-center uk-margin-top"> V. SINERGIA E INTERÉS COMPUESTO </h4> 
                           <ul>
-                            <li>  Creando Sinergía entre tus fuentes de ingresos  </li>
-                            <li>  La importancia del Cashflow                     </li>
-                            <li>  El Saldo Insoluto y las Inversiones             </li>
-                            <li>  Aprovechando el interés compuesto               </li>
-                            <li>  Creando un portafolio de inversión propio       </li>
-                            <li>  Libertad Financiera alcanzable                  </li>
+                            <li>  Creando Sinergía entre tus fuentes de ingresos         </li>
+                            <li>  La importancia del Cashflow                            </li>
+                            <li>  El Saldo Insoluto y las Inversiones                    </li>
+                            <li>  Crea ingresos pasivos permanentes con dinero prestado  </li>
+                            <li>  Aprovechando el interés compuesto                      </li>
+                            <li>  Creando un portafolio de inversión propio              </li>
+                            <li>  Libertad Financiera alcanzable                         </li>
                           </ul>
                       </article>
 

@@ -4,7 +4,7 @@ class Countdown extends Component {
     state= {}
     render(){
         return (
-            <div className="uk-flex uk-flex-center uk-align-center" uk-grid uk-countdown="date: 2020-07-15T24:00:00+00:00">
+            <div className="uk-flex uk-flex-center uk-align-center" uk-grid="true" uk-countdown="date: 2020-07-15T24:00:00+00:00">
 
                 <section>
                     <article className="uk-countdown-number uk-countdown-days">                                         </article>
