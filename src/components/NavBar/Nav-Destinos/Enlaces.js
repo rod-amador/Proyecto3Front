@@ -32,7 +32,7 @@ class Enlaces extends Component {
                   </p>
 
                   <div className="uk-flex uk-flex-center">     
-                      <table class="uk-table-hover uk-table-divider">
+                      <table className="uk-table-hover uk-table-divider">
                         <thead>
                             <tr>
                                 <th>EMPRESA</th>
@@ -98,7 +98,7 @@ class Enlaces extends Component {
                   </p>
 
                   <div className="uk-flex uk-flex-center">     
-                      <table class="uk-table-hover uk-table-divider">
+                      <table className="uk-table-hover uk-table-divider">
                         <thead>
                             <tr>
                                 <th>EMPRESA</th>
@@ -167,7 +167,7 @@ class Enlaces extends Component {
                   </p>
 
                   <div className="uk-flex uk-flex-center">     
-                      <table class="uk-table-hover uk-table-divider">
+                      <table className="uk-table-hover uk-table-divider">
                         <thead>
                             <tr>
                                 <th>EMPRESA</th>
@@ -246,7 +246,7 @@ class Enlaces extends Component {
                   </p>
 
                   <div className="uk-flex uk-flex-center">     
-                      <table class="uk-table-hover uk-table-divider">
+                      <table className="uk-table-hover uk-table-divider">
                         <thead>
                             <tr>
                                 <th>EMPRESA</th>

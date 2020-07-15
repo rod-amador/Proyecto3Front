@@ -1,9 +1,10 @@
 import React, {Component} from "react"
 import { Link } from "react-router-dom";
-import ModalButtonUser from "../Forms/ModalButtonUser";
+
 
 class NavBar extends Component {
-    state= {}
+    state= {token: false}
+
     render(){
 
     return (
@@ -20,10 +21,10 @@ class NavBar extends Component {
 
             <section className="uk-navbar-right">
                 <ul className="uk-navbar-nav">
-                    <li>      <Link to={"/books"}   >    Books              </Link></li>
+                    <li>      <Link to={"/videos"}  >    Videos             </Link></li>
+                    <li>      <Link to={"/books"}   >    Libros             </Link></li>
                     <li>      <Link to={"/login"}   >    Login              </Link></li>
-                    <li>      <Link to={""}         >   <ModalButtonUser/>  </Link></li>
-                   
+                    <li>      <Link to={"/signup"}  >    Signup             </Link></li>                   
                 </ul>
             </section>
 

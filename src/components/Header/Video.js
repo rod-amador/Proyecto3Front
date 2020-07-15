@@ -10,8 +10,10 @@ class Video extends Component {
              <ReactPlayer 
                width="70%"  
                className="uk-align-center"
-               url="https://youtu.be/9CS7j5I6aOc"
-               controls playsinline uk-video>
+               url="https://www.youtube.com/embed/9CS7j5I6aOc"
+               controls playsinline uk-video="true"
+               rel="noopener noreferrer"
+               >
              </ReactPlayer>
         
         )}}

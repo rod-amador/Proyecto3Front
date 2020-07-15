@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-
+import { withFormik, Form, Field } from 'formik'
 
 let fondo = require("../../../images/fondo.jpg")
 let logo = require ("../../../images/logo.jpg");
-
 
 class Login extends Component {
   
@@ -26,26 +25,23 @@ class Login extends Component {
           uk-flex-center 
           uk-flex-middle" >  
           
-          <article
-          className="uk-background-muted "
-          style={{
-            border:"solid 2px black",
+          <article className="uk-background-muted"
+          style={{border:"solid 2px black",
             width: "1000px",
-            padding: "10px"}}>
+            padding: "10px"
+            }}>
 
             <div className="uk-flex uk-flex-center uk-flex-middle uk-margin-large-left">
               <img src={logo} alt="company" className="uk-margin"/>
     
-            <form 
-              className="uk-form uk-width-1-2 uk-margin-large-top uk-margin-large-left"
-            //   onSubmit={(e) => this.handleSubmit(e)}
-            >
+
+            <form className="uk-form uk-width-1-2 uk-margin-large-top uk-margin-large-left">
+
                 {/* USERNAME: NOMBRE DE LA PERSONA */}
                   <span uk-icon="icon: users; ratio: 2" className="uk-margin-small-right"> </span>
                   
                   <input
                     name="email"
-                    // onChange={(e) => this.handleChange(e)}
                     type="text"
                     placeholder="Email"
                     className="uk-width-1-2 uk-form-large uk-text-center"
@@ -57,7 +53,6 @@ class Login extends Component {
                   <span uk-icon="icon: lock; ratio: 2" className="uk-margin-small-right"> </span>
                   <input
                     name="password"
-                    //   onChange={(e) => this.handleChange(e)}
                     className="uk-margin-small-top uk-width-1-2 uk-form-large uk-text-center"
                     type="password"
                     placeholder="Password"

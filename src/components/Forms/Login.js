@@ -2,17 +2,13 @@ import React from 'react';
 import {Formik} from "formik" 
 import * as Yup from "yup"    
 import ErrorDialog from "./ErrorDialog"
-import {newUser} from '../../services/userService';
+import { login } from '../../services/loginService';
 
 
 // Librerías en uso: Yup y Formik 
 // formik para enviar // Yup para validar
 
 const validationSchema = Yup.object().shape(  {
-    name: Yup.string()            
-        .required("Campo necesario")
-        .min(2, "Tu nombre debe ser más largo")
-        .max(20, "Tu nombre es muy largo"),
    
     email: Yup.string()
         .email("Correo electrónico inválido")
@@ -20,31 +16,30 @@ const validationSchema = Yup.object().shape(  {
 
     password: Yup.string()
         .required("Campo necesario")
-        .min(5, "Mínimo 5 caracteres"),
-        
-    origin: Yup.string()
-        .required("Campo necesario")
+        .min(3, "Mínimo 3 caracteres"),
 })
 
 ////////////FORMULARIO
 
-export default function FormikFormUser (){
-   
+export default function LoginForm (){
+  
+
     return (
     <div className="uk-text-center uk-padding">
         
     <Formik
         //aqui estan los valores del formulario (Schemas)
-        initialValues= { {name: "", email: "", origin: "", password:""    }}
+        initialValues= { {email: "", password:"" }}
         validationSchema={validationSchema}
         
         onSubmit= { (values, {setSubmitting, resetForm} )=>{
             setSubmitting(true)
-            newUser(values)
-            alert("Usuario creado con éxito");
+            login(values)
+            alert("login realizado con éxito");
+            //aqui el redirect -> podría ser con .then
             resetForm();
             setSubmitting(false)
-           
+            // aqui se pondría una pestaña de redirect
         }}
        
         >
@@ -53,32 +48,12 @@ export default function FormikFormUser (){
                 <form onSubmit={handleSubmit}>
                     
                 <div>
-                    <label htmlFor="name" >    Name:       </label>
-                    <input 
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Nombre"  
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    value={values.name}
-                    className={touched.name && errors.name ? "uk-form-danger uk-text-secondary uk-text-center uk-input" : " uk-input uk-form-success uk-text-secondary uk-text-center"} 
-                   />
-
-                    <ErrorDialog
-                    touched={touched.name}
-                    message={errors.name}
-                    /> 
-
-                </div>
-
-                <div>
                     <label htmlFor="email">     Email:            </label>
                     <input 
                     type="email"
                     name="email"
                     id="email"
-                    placeholder="Escribe el correo a registrar"  
+                    placeholder="Escribe el correo"  
                     onChange={handleChange}
                     onBlur={handleBlur}
                     value={values.email}
@@ -97,7 +72,7 @@ export default function FormikFormUser (){
                     type="password"
                     name="password"
                     id="password"
-                    placeholder="Escribe un password"  
+                    placeholder="Escribe tu password"  
                     onChange={handleChange}
                     onBlur={handleBlur}
                     value={values.password}
@@ -109,32 +84,6 @@ export default function FormikFormUser (){
                     message={errors.password}
                     /> 
                 </div>
-
-                <div>
-                    <label htmlFor="origin"> ¿Cómo te enteraste de esta página?        </label>
-                    <select 
-                        name="origin"
-                        value={values.origin}
-                        id="origin"
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        className={touched.origin && errors.origin ? "uk-form-danger uk-text-secondary uk-text-center uk-input" : "uk-input uk-text-center uk-form-success uk-text-secondary"}
-                    >
-                            <option value="null"            label="Escoge una de las siguientes opciones"   />
-                            <option value="marketing"       label="Marketing"                               />
-                            <option value="facebook"        label="Facebook"                                />
-                            <option value="google"          label="Google"                                  />
-                            <option value="youtube"         label="Youtube"                                 />
-                            <option value="conocidos"       label="Conocidos"                               />
-                    </select>
-
-                    <ErrorDialog
-                    touched={touched.origin}
-                    message={errors.origin}
-                    /> 
-                </div>
-
-
 
                 <div className="uk-submit">
                     <button 

@@ -7,9 +7,15 @@ import UIkit from "uikit"
 import "uikit/dist/css/uikit.min.css"
 import Icons from "uikit/dist/js/uikit-icons"
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 UIkit.use(Icons)
 
-const WithRouter = ()=>(  <BrowserRouter> <App/> </BrowserRouter>  )
+const WithRouter = ()=>(  
+    
+    <BrowserRouter> 
+        <App/> 
+    </BrowserRouter>  )
 
 
 ReactDOM.render(  <WithRouter />, document.getElementById('root')     );

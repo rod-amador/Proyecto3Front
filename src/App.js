@@ -1,20 +1,20 @@
-import React from 'react';
-
+import React, {Component} from 'react';
 import NavBar from './components/NavBar/Navbar';
 import Routes from './Routes';
 
+class App extends Component {
+  
+  render(){
+  
 
-
-
-function App() {
-  return (
-    <div>
-    <NavBar/>
-    <Routes/>
-    
-
-    </div>
+    return (
+        <div>
+          <NavBar/>
+          <Routes/>
+        </div>
   );
-}
+}}
 
-export default App;
+
+
+export default App
