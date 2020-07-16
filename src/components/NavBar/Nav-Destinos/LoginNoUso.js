@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { withFormik, Form, Field } from 'formik'
+
 
 let fondo = require("../../../images/fondo.jpg")
 let logo = require ("../../../images/logo.jpg");

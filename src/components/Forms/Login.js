@@ -1,106 +1,108 @@
-import React from 'react';
-import {Formik} from "formik" 
-import * as Yup from "yup"    
-import ErrorDialog from "./ErrorDialog"
-import { login } from '../../services/loginService';
-
-
-// Librerías en uso: Yup y Formik 
-// formik para enviar // Yup para validar
-
-const validationSchema = Yup.object().shape(  {
-   
-    email: Yup.string()
-        .email("Correo electrónico inválido")
-        .required("Campo necesario"),
-
-    password: Yup.string()
-        .required("Campo necesario")
-        .min(3, "Mínimo 3 caracteres"),
-})
-
-////////////FORMULARIO
-
-export default function LoginForm (){
   
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { login, signup } from "../../services/authService";
+import AppContext from "../../AppContext";
 
+
+class LoginForm extends Component {
+  static contextType = AppContext;
+  state = {
+    user: {},
+  };
+
+  handleChange = (e) => {
+    let { user } = this.state;
+    user = { ...user, [e.target.name]: e.target.value };
+    this.setState({ user });
+  };
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    const isLogin = this.props.location.pathname === "/login";
+    const { setUser } = this.context;
+    const { user: credentials } = this.state;
+    const action = isLogin ? login : signup;
+    const { history } = this.props;
+    const nextRoute = isLogin ? "/" : "/login";
+    action(credentials)
+      .then((res) => {
+        if (isLogin) {
+          const { user } = res.data;
+          localStorage.setItem("user", JSON.stringify(user));
+          setUser(user);
+        }
+        history.push(nextRoute);
+      })
+      .catch((err) => {console.log(err)});
+  };
+
+  render() {
+    const isLogin = this.props.location.pathname === "/login";
     return (
-    <div className="uk-text-center uk-padding">
-        
-    <Formik
-        //aqui estan los valores del formulario (Schemas)
-        initialValues= { {email: "", password:"" }}
-        validationSchema={validationSchema}
-        
-        onSubmit= { (values, {setSubmitting, resetForm} )=>{
-            setSubmitting(true)
-            login(values)
-            alert("login realizado con éxito");
-            //aqui el redirect -> podría ser con .then
-            resetForm();
-            setSubmitting(false)
-            // aqui se pondría una pestaña de redirect
-        }}
-       
-        >
-            {
-             ({values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting}  )=>(
-                <form onSubmit={handleSubmit}>
-                    
-                <div>
-                    <label htmlFor="email">     Email:            </label>
-                    <input 
-                    type="email"
-                    name="email"
+      <section className="uk-section">
+        <div className="uk-container uk-flex uk-flex-center">
+          <div className="uk-width-1-4">
+            <h3>{isLogin ? "Login" : "Signup"}</h3>
+            <form
+              onSubmit={this.handleSubmit}
+              className="uk-width-1-1 uk-form-stacked uk-flex uk-flex-center uk-flex-column"
+            >
+              <div className="uk-margin">
+                <label className="uk-form-label" htmlFor="email">
+                  Email:
+                </label>
+                <div className="uk-inline">
+                  <span
+                    className="uk-form-icon uk-form-icon-flip"
+                    uk-icon="icon: mail"
+                  ></span>
+                  <input
+                    onChange={this.handleChange}
                     id="email"
-                    placeholder="Escribe el correo"  
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    value={values.email}
-                    className={touched.email && errors.email ? "uk-form-danger uk-text-secondary uk-text-center uk-input" : "uk-input uk-text-center uk-form-success uk-text-secondary"}
+                    name="email"
+                    className="uk-input"
+                    type="email"
+                    required
+                  />
+                </div>
+                <div className="uk-margin">
+                  <label className="uk-form-label" htmlFor="password">
+                    Password:
+                  </label>
+                  <div className="uk-inline">
+                    <span
+                      className="uk-form-icon uk-form-icon-flip"
+                      uk-icon="icon: lock"
+                    ></span>
+                    <input
+                      onChange={this.handleChange}
+                      id="password"
+                      name="password"
+                      className="uk-input"
+                      type="password"
+                      required
                     />
-
-                    <ErrorDialog
-                    touched={touched.email}
-                    message={errors.email}
-                    /> 
+                  </div>
                 </div>
-
-                <div>
-                    <label htmlFor="password">     Password:            </label>
-                    <input 
-                    type="password"
-                    name="password"
-                    id="password"
-                    placeholder="Escribe tu password"  
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    value={values.password}
-                    className={touched.password && errors.password ? "uk-form-danger uk-text-secondary uk-text-center uk-input" : "uk-input uk-text-center uk-form-success uk-text-secondary"}
-                    />
-
-                    <ErrorDialog
-                    touched={touched.password}
-                    message={errors.password}
-                    /> 
+              </div>
+              {isLogin ? (
+                <div className="uk-text-meta">
+                  Aún no tienes cuenta?{" "}
+                  <Link className="uk-text-primary" to="/signup">
+                    Crear cuenta
+                  </Link>
                 </div>
+              ) : null}
+              <button className="uk-button uk-button-primary">
+                {isLogin ? "Login" : "Signup"}
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    );
+  }
+}
 
-                <div className="uk-submit">
-                    <button 
-                    
-                    type="submit"
-                    disabled={isSubmitting} // no se pueda apretar mientras se sube}
-                    className="uk-button uk-button-primary uk-align-center"
-                    >      SUBMIT          </button>
-                </div>
-
-
-                </form>
-                )}
-        
-    </Formik>
-    </div>
-
-    
-    )}
-
+export default LoginForm;

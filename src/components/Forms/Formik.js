@@ -2,7 +2,7 @@ import React from 'react';
 import {Formik} from "formik" 
 import * as Yup from "yup"    
 import ErrorDialog from "./ErrorDialog"
-import {newUser} from '../../services/userService';
+import {signup} from '../../services/authService';
 
 
 // Librerías en uso: Yup y Formik 
@@ -40,7 +40,7 @@ export default function FormikFormUser (){
         
         onSubmit= { (values, {setSubmitting, resetForm} )=>{
             setSubmitting(true)
-            newUser(values)
+            signup(values)
             alert("Usuario creado con éxito");
             resetForm();
             setSubmitting(false)
