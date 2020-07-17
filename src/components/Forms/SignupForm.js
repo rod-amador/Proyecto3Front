@@ -28,7 +28,7 @@ const validationSchema = Yup.object().shape(  {
 
 ////////////FORMULARIO
 
-export default function FormikFormUser (){
+export default function SignupForm (){
    
     return (
     <div className="uk-text-center uk-padding">

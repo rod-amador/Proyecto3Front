@@ -5,20 +5,19 @@ import { Switch, Route } from "react-router-dom";
 // contenido de landing
 import AllHeader from "./components/Header/AllHeader"
 
-// registro y login
-//import Login from "./components/NavBar/Nav-Destinos/Login";
-import Login from "./components/Forms/Login"
-import FormikFormUser from "./components/Forms/Formik"
-
 // enlaces del navbar
 import Cursos from "./components/NavBar/Nav-Destinos/Cursos";
 import Enlaces from "./components/NavBar/Nav-Destinos/Enlaces";
 import Grupos from "./components/NavBar/Nav-Destinos/Grupos";
 
+// si está loggeado
 import Books from "./components/Books/Books";
 import Videos from "./components/Videos/Videos"
+//boton de logout
 
-//Aqui vienen todas las rutas que tenemos
+//No está loggeado
+import Login from "./components/Forms/Login"
+import SignupForm from "./components/Forms/SignupForm";
 
 const Routes = ()=> (
     <Switch>
@@ -27,8 +26,11 @@ const Routes = ()=> (
         <Route exact path= "/cursos"    component={Cursos}          />
         <Route exact path= "/enlaces"   component={Enlaces}         />
         <Route exact path= "/grupos"    component={Grupos}          />
+
+
         <Route exact path= "/login"     component={Login}           />
-        <Route exact path= "/signup"    component={FormikFormUser}  />        
+        <Route exact path= "/signup"    component={SignupForm}      />
+
         <Route exact path= "/books"     component={Books}           />
         <Route exact path= "/videos"    component={Videos}          />
 

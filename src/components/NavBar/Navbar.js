@@ -3,14 +3,16 @@ import { Link } from "react-router-dom";
 import AppContext from "../../AppContext"
 
 
+
 export default function NavBar () {
   
     return (
 
 <AppContext.Consumer>
         { (value) => {
-            console.log(value)
+            
             const {user} = value.state
+            const { logout } = value;
 
             return (
                 <nav className="uk-navbar uk-navbar-container">
@@ -26,16 +28,17 @@ export default function NavBar () {
     
                 <section className="uk-navbar-right">
                     <ul className="uk-navbar-nav">
-                        <li>      <Link to={"/videos"}  >    Videos             </Link></li>
-                        <li>      <Link to={"/books"}   >    Libros             </Link></li>
-                        <li>      <Link to={"/login"}   >    Login              </Link></li>
-                        <li>      <Link to={"/signup"}  >    Signup             </Link></li>
-    
-                        
+              
                         {user.email ? 
-                            <div>Usuario conectado</div> : 
-                            <div>No funciono</div>}
-                                           
+                            <React.Fragment>
+                                <li>      <Link to={"/books"}    >   Libros             </Link></li>
+                                <li>      <Link to={"/videos"}   >   Videos             </Link></li>
+                                <li>      <Link to={""} onClick={logout}   >   Logout             </Link></li>
+                             </React.Fragment> 
+                             : 
+                            <React.Fragment>
+                             <li>      <Link to={"/login"}   >    Login / Signup             </Link></li>
+                             </React.Fragment>}
                     </ul>
                 </section>
             </nav>
