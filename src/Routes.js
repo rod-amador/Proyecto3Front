@@ -6,9 +6,9 @@ import { Switch, Route } from "react-router-dom";
 import AllHeader from "./components/Header/AllHeader"
 
 // enlaces del navbar
-import Cursos from "./components/NavBar/Nav-Destinos/Cursos";
-import Enlaces from "./components/NavBar/Nav-Destinos/Enlaces";
-import Grupos from "./components/NavBar/Nav-Destinos/Grupos";
+import Cursos from "./components/NavBar/Cursos";
+import Enlaces from "./components/NavBar/Enlaces";
+import Grupos from "./components/NavBar/Grupos";
 
 // si está loggeado
 import Books from "./components/Books/Books";

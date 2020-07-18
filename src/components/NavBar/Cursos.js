@@ -1,5 +1,5 @@
  import React, { Component } from "react";
- import {themeWhite, themeBlack, themeRed} from "../../../themes"
+ import {themeWhite, themeBlack, themeRed} from "../../themes"
 
 class Cursos extends Component {
   
@@ -22,20 +22,20 @@ class Cursos extends Component {
               Por esto, la información contenida en este curso será una de las mejores inversiones de tu vida.                        
             </p>
  
-              <section className="uk-background-muted uk-text-center">
+            <section className="uk-text-center">
 
-                <div style={themeBlack}>
-                      <h2 style={{color:"white"}}>Aprenderás </h2>
+                      <div style={themeBlack} className="uk-width-1-2@s uk-align-center">
+                            <h2 style={{color:"white"}}>Aprenderás </h2>
 
-                      <ul className="uk-list uk-list-collapse" >                           
-                          <li style={{color:"" }}> <strong>    A potencializar tus finanzas                                 </strong>   </li>
-                          <li style={{color:"" }}> <strong>    A crear múltiples fuentes de ingresos                        </strong>   </li>
-                          <li style={{color:"" }}> <strong>    Dónde y cómo invertir para multiplicar tus ingresos          </strong>   </li>
-                          <li style={{color:"" }}> <strong>    A obtener ingresos pasivos permanentes                       </strong>   </li>
-                          <li style={{color:"" }}> <strong>    A jugar con créditos y deudas para hacerte de riqueza propia </strong>   </li> <br/>
-                      </ul> 
-                </div>
-              </section>
+                            <ul className="uk-list uk-list-collapse" >                           
+                                <li> <strong>    A potencializar tus finanzas                                 </strong>   </li>
+                                <li> <strong>    A crear múltiples fuentes de ingresos                        </strong>   </li>
+                                <li> <strong>    Dónde y cómo invertir para multiplicar tus ingresos          </strong>   </li>
+                                <li> <strong>    A obtener ingresos pasivos permanentes                       </strong>   </li>
+                                <li> <strong>    A jugar con créditos y deudas para hacerte de riqueza propia </strong>   </li> <br/>
+                            </ul> 
+                      </div>
+            </section>
                 
             <p className="uk-text-center">  
                 Con todo esto,                                               <br/> 

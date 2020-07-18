@@ -9,7 +9,7 @@ class Grupos extends Component {
               style={{backgroundColor:"black"}}> 
 
             <section  style={{color:"blue"}}
-                      className="uk-card-default uk-width-1-1 uk-align-center
+                      className="uk-card-default uk-width-1-1@s uk-align-center
                                  uk-margin-left uk-margin-right uk-margin-top uk-margin-bottom">
 
                       <div className="uk-card-header uk-text-center"> 
@@ -28,7 +28,7 @@ class Grupos extends Component {
 
 
             <section  style={{color:"blue"}}
-                      className="uk-card-default uk-width-1-4 uk-align-center ">
+                      className="uk-card-default uk-width-1-4@s uk-align-center ">
 
                       <div  className="uk-card-header uk-text-center uk-margin-right"> 
                             <a href="https://www.facebook.com/groups/aprendiendoainvertirmx" target="_blank" rel="noopener noreferrer">   
@@ -49,7 +49,7 @@ class Grupos extends Component {
 
 
             <section style={{color:"green"}}
-                     className="uk-card-default uk-width-1-4 uk-align-center">
+                     className="uk-card-default uk-width-1-4@s uk-align-center">
 
                     <div className="uk-card-header uk-text-center uk-margin-right"> 
                         <a className="uk-link-muted" href="https://chat.whatsapp.com/KFaBYkixl5mJDXJH1zaran" target="_blank" rel="noopener noreferrer"> 
@@ -68,7 +68,7 @@ class Grupos extends Component {
 
 
             <section  style={{color:"red"}}
-                      className="uk-card-default uk-width-1-4 uk-align-center ">
+                      className="uk-card-default uk-width-1-4@s uk-align-center ">
 
                       <div className="uk-card-header uk-text-center uk-margin-right"> <span uk-icon="icon: youtube; ratio:8"> </span>   </div>
                       <div className="uk-card-body uk-text-center uk-margin-right">   

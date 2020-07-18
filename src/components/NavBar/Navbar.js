@@ -15,7 +15,7 @@ export default function NavBar () {
             const { logout } = value;
 
             return (
-                <nav className="uk-navbar uk-navbar-container">
+                <nav className="uk-navbar uk-navbar-container uk-margin-left uk-margin-right">
 
                 <section className="uk-navbar-left">
                     <ul className="uk-navbar-nav">
@@ -31,8 +31,8 @@ export default function NavBar () {
               
                         {user.email ? 
                             <React.Fragment>
-                                <li>      <Link to={"/books"}    >   Libros             </Link></li>
-                                <li>      <Link to={"/videos"}   >   Videos             </Link></li>
+                                <li>      <Link to={"/books"}              >   Libros             </Link></li>
+                                <li>      <Link to={"/videos"}             >   Videos             </Link></li>
                                 <li>      <Link to={""} onClick={logout}   >   Logout             </Link></li>
                              </React.Fragment> 
                              : 

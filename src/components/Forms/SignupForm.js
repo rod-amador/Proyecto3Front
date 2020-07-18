@@ -3,6 +3,7 @@ import {Formik} from "formik"
 import * as Yup from "yup"    
 import ErrorDialog from "./ErrorDialog"
 import {signup} from '../../services/authService';
+import {themeWhite, themeBlack} from "../../themes"
 
 
 // Librerías en uso: Yup y Formik 
@@ -31,7 +32,7 @@ const validationSchema = Yup.object().shape(  {
 export default function SignupForm (){
    
     return (
-    <div className="uk-text-center uk-padding">
+    <div className="uk-text-center uk-align-center uk-padding uk-width-1-2" style={themeBlack}>
         
     <Formik
         //aqui estan los valores del formulario (Schemas)
@@ -53,16 +54,19 @@ export default function SignupForm (){
                 <form onSubmit={handleSubmit}>
                     
                 <div>
-                    <label htmlFor="name" >    Name:       </label>
+                    <label htmlFor="name" >    Nombre:       </label>
                     <input 
                     type="text"
                     name="name"
                     id="name"
-                    placeholder="Nombre"  
+                    placeholder="*"  
                     onChange={handleChange}
                     onBlur={handleBlur}
                     value={values.name}
-                    className={touched.name && errors.name ? "uk-form-danger uk-text-secondary uk-text-center uk-input" : " uk-input uk-form-success uk-text-secondary uk-text-center"} 
+                    className={touched.name && errors.name ? 
+                                "uk-form-danger uk-text-secondary uk-text-center uk-input" 
+                                :  
+                                " uk-input uk-form-success uk-text-secondary uk-text-center"} 
                    />
 
                     <ErrorDialog
@@ -78,11 +82,14 @@ export default function SignupForm (){
                     type="email"
                     name="email"
                     id="email"
-                    placeholder="Escribe el correo a registrar"  
+                    placeholder="*"  
                     onChange={handleChange}
                     onBlur={handleBlur}
                     value={values.email}
-                    className={touched.email && errors.email ? "uk-form-danger uk-text-secondary uk-text-center uk-input" : "uk-input uk-text-center uk-form-success uk-text-secondary"}
+                    className={touched.email && errors.email ? 
+                                "uk-form-danger uk-text-secondary uk-text-center uk-input" 
+                                : 
+                                "uk-input uk-text-center uk-form-success uk-text-secondary"}
                     />
 
                     <ErrorDialog
@@ -97,11 +104,14 @@ export default function SignupForm (){
                     type="password"
                     name="password"
                     id="password"
-                    placeholder="Escribe un password"  
+                    placeholder="Mínimo de 5 caracteres*"  
                     onChange={handleChange}
                     onBlur={handleBlur}
                     value={values.password}
-                    className={touched.password && errors.password ? "uk-form-danger uk-text-secondary uk-text-center uk-input" : "uk-input uk-text-center uk-form-success uk-text-secondary"}
+                    className={touched.password && errors.password ? 
+                                "uk-form-danger uk-text-secondary uk-text-center uk-input" 
+                                : 
+                                "uk-input uk-text-center uk-form-success uk-text-secondary"}
                     />
 
                     <ErrorDialog
@@ -118,9 +128,12 @@ export default function SignupForm (){
                         id="origin"
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        className={touched.origin && errors.origin ? "uk-form-danger uk-text-secondary uk-text-center uk-input" : "uk-input uk-text-center uk-form-success uk-text-secondary"}
+                        className={touched.origin && errors.origin ? 
+                                    "uk-form-danger uk-text-secondary uk-text-center uk-input" 
+                                    : 
+                                    "uk-input uk-text-center uk-form-success uk-text-secondary"}
                     >
-                            <option value="null"            label="Escoge una de las siguientes opciones"   />
+                            <option                         label="Escoge una de las siguientes opciones"   />
                             <option value="marketing"       label="Marketing"                               />
                             <option value="facebook"        label="Facebook"                                />
                             <option value="google"          label="Google"                                  />
@@ -137,11 +150,9 @@ export default function SignupForm (){
 
 
                 <div className="uk-submit">
-                    <button 
-                    
-                    type="submit"
-                    disabled={isSubmitting} // no se pueda apretar mientras se sube}
-                    className="uk-button uk-button-primary uk-align-center"
+                    <button type="submit" 
+                            disabled={isSubmitting} // no se pueda apretar mientras se sube}
+                            className="uk-button uk-button-primary uk-align-center"
                     >      SUBMIT          </button>
                 </div>
 

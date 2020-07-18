@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {themeBlack, themeWhite} from "../../themes"
 
 class Enlaces extends Component {
   
@@ -6,32 +7,32 @@ class Enlaces extends Component {
       return (
   
         <section className="uk-align-center uk-text-center">
-           <h1 className="uk-align-center uk-text-center">MIS ENLACES DE AFILIADO</h1>
-              <p className="uk-align-center uk-text-center">
+          <h1 className="uk-align-center uk-text-center">MIS ENLACES DE AFILIADO</h1>
+                    <p className="uk-align-center uk-text-center">
 
-                  En esta sección pongo a tu disposición mis enlaces de afiliados <br/> 
-                  para que puedas inscribirte y abrir cuentas
-                  en las empresas fintech donde puedes invertir.
-                     <br/>
-                     <br/>
-                  <strong>   
-                    Muchas de estas empresas te darán un beneficio adicional por inscribirte con mis códigos o enlace de afiliados. 
-                  </strong>
-                    <br/>
-                  Otras, solo me beneficiarán a mi con una pequeña comisión.
-                    <br/> 
-                    <br/>
-              </p>
+                        En esta sección pongo a tu disposición mis enlaces de afiliados <br/> 
+                        para que puedas inscribirte y abrir cuentas
+                        en las empresas fintech donde puedes invertir.
+                          <br/>
+                          <br/>
+                        <strong>   
+                          Muchas de estas empresas te darán un beneficio adicional por inscribirte con mis códigos o enlace de afiliados. 
+                        </strong>
+                          <br/>
+                        Otras, solo me beneficiarán a mi con una pequeña comisión.
+                          <br/> 
+                          <br/>
+                    </p>
 
-              <article>
-                <h2>SOFIPOS</h2>  
+            <article style={themeBlack} className="uk-width-1-2@s uk-align-center">
+                <h2 style={{color:"white"}}>SOFIPOS</h2>  
                   <p>
                       Son empresas reguladas por la misma institución que regula y controla a los bancos. <br/>
                       En ellas, tu dinero está protegido por el gobierno hasta por $150,000 pesos.        <br/>
                       Pagan rendimientos de hasta el 12% anual por ahorrar tu dinero con ellas. 
                   </p>
 
-                  <div className="uk-flex uk-flex-center">     
+                  <div className="uk-flex uk-flex-center" style={themeWhite}>     
                       <table className="uk-table-hover uk-table-divider">
                         <thead>
                             <tr>
@@ -89,15 +90,15 @@ class Enlaces extends Component {
                 <br/>
     
 
-              <article>
-                <h2>CROWDFUNDING</h2>  
+              <article style={themeBlack} className="uk-width-1-2@s uk-align-center">
+                <h2 style={{color:"white"}}>CROWDFUNDING</h2>  
                   <p>
                     Son empresas de préstamos de persona a persona. <br/>
                     En ellas eliges a quién prestarle dinero <br/>
                     y ese dinero se te devolverá mes con mes más el interés correspondiente hasta saldar la deuda
                   </p>
 
-                  <div className="uk-flex uk-flex-center">     
+                  <div className="uk-flex uk-flex-center" style={themeWhite}>     
                       <table className="uk-table-hover uk-table-divider">
                         <thead>
                             <tr>
@@ -156,8 +157,8 @@ class Enlaces extends Component {
                 <br/>
                 <br/>
            
-                <article>
-                <h2>CROWDFUNDING INMOBILIARIO</h2>  
+                <article style={themeBlack} className="uk-width-1-2@s uk-align-center">
+                <h2 style={{color:"white"}}>CROWDFUNDING INMOBILIARIO</h2>  
                   <p>
                     Empresas que te permitirán invertir en bienes raíces <br/>
                     sin tener el capital necesario para adquirir una propiedad por tu lado. <br/>
@@ -166,7 +167,7 @@ class Enlaces extends Component {
                     <strong style={{color:"red"}}> Algunas de estas empresas te permitirán recibir rendimientos PERMANENTES. </strong>
                   </p>
 
-                  <div className="uk-flex uk-flex-center">     
+                  <div className="uk-flex uk-flex-center" style={themeWhite}>     
                       <table className="uk-table-hover uk-table-divider">
                         <thead>
                             <tr>
@@ -237,15 +238,15 @@ class Enlaces extends Component {
                 <br/>
                 <br/>
 
-                <article>
-                <h2>OTRAS EMPRESAS FINTECH</h2>  
+                <article style={themeBlack} className="uk-width-1-2@s uk-align-center">
+                <h2 style={{color:"white"}}>OTRAS EMPRESAS FINTECH</h2>  
                   <p>
                     Son empresas de préstamos de persona a persona. <br/>
                     En ellas eliges a quién prestarle dinero <br/>
                     y ese dinero se te devolverá mes con mes más el interés correspondiente hasta saldar la deuda
                   </p>
 
-                  <div className="uk-flex uk-flex-center">     
+                  <div className="uk-flex uk-flex-center" style={themeWhite}>     
                       <table className="uk-table-hover uk-table-divider">
                         <thead>
                             <tr>
