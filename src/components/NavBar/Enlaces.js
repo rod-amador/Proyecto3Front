@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {themeBlack, themeWhite} from "../../themes"
+import {themeBlack, themeWhite} from "../themes"
 
 class Enlaces extends Component {
   

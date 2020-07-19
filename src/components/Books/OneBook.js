@@ -1,4 +1,5 @@
 import React, {Component} from "react"
+import {themeWhite, themeBlack} from "../themes"
 
 //componente tonto --> solo recibira props .
 
@@ -7,15 +8,15 @@ class OneBook extends Component {
     render(){
         return (
 
-            <section className="uk-section" style={{backgroundColor:"red"}}>
-                   <article className="uk-container">
-                       <div className="uk-card uk-card-default uk-width-1-1@m uk-align-center">
+            <section className="uk-section" style={{backgroundColor:"blue"}}>
+                   <article className="uk-container" style={themeBlack}>
+                       <div className="uk-card uk-card-default uk-width-1-1@m uk-align-center" style={themeBlack}>
 
                             <div className="uk-card-header uk-flex uk-flex-center uk-flex-column uk-text-center">   
                                     <img src={this.props.image } alt="" width="150px" height="200px" className="uk-align-center"   />  
                                     
                                 <div>
-                                        <h3> <strong>  {this.props.title}  </strong>  </h3>    
+                                        <h3 style={{color:"green"}}> <strong>  {this.props.title}  </strong>  </h3>    
                                              <span>    {this.props.author}            </span>
                                 </div>
                             </div>

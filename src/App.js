@@ -4,8 +4,9 @@ import Routes from './Routes';
 
 import AppContext from "./AppContext"
 import { logout } from "./services/authService";
-import {Paragraph1, Paragraph2, Paragraph3, Paragraph4} from './components/Paragraph.js/Paragraph';
+
 import Header from './components/Header/Header';
+import { Paragraph1, Paragraph2, Paragraph3, Paragraph4, ParagraphTop } from './components/Paragraph/Paragraph';
 
 
 //clase para poder usar estados
@@ -14,6 +15,7 @@ class App extends Component {
  
   state = { user: {} }
   setUser = (user)=> this.setState( { user } )
+  
   logout = () => {
     logout().then(() => {
       localStorage.removeItem("user");
@@ -29,13 +31,12 @@ class App extends Component {
 
             <div>
               <NavBar/>
-              <Header/>
-              <Paragraph1/>
-              <Paragraph2/>
-              <Paragraph3/>
-              <Paragraph4/>
+              <Routes/>
+             
+             
+              
 
-              {/* <Routes/> */}
+              
             </div>
 
       </AppContext.Provider>

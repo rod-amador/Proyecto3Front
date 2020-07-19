@@ -3,7 +3,7 @@ import {Formik} from "formik"
 import * as Yup from "yup"    
 import ErrorDialog from "./ErrorDialog"
 import {signup} from '../../services/authService';
-import {themeWhite, themeBlack} from "../../themes"
+import {themeWhite, themeBlack} from "../themes"
 
 
 // Librerías en uso: Yup y Formik 

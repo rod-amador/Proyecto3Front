@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import OneBook from "./OneBook"
 import {getBooks} from "../../services/booksService"
+import {themeBlack, themeWhite} from "../themes"
 
 class BookService extends Component {
     state = {   books: []  };
@@ -19,8 +20,8 @@ class BookService extends Component {
 
     render () {
         return (
-            <section className="uk-section uk-text-justify ">  
-                <h3 className="uk-text-center">LIBROS</h3>
+            <section className="uk-section uk-text-justify" style={themeWhite}>  
+                <h3 className="uk-text-center" style={{color:"black"}}>LIBROS</h3>
                 <p className="uk-margin-left uk-margin-right">
                     En esta sección te recomendaré libros que potencializarán tanto tus finanzas como
                     todas las áreas de tu vida, te enseñarán todo lo que necesitas saber para aumentar

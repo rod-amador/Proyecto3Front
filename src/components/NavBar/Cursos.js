@@ -1,5 +1,5 @@
  import React, { Component } from "react";
- import {themeWhite, themeBlack, themeRed} from "../../themes"
+ import {themeWhite, themeBlack, themeRed} from "../themes"
 
 class Cursos extends Component {
   

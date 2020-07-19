@@ -7,7 +7,6 @@ import UIkit from "uikit"
 import "uikit/dist/css/uikit.min.css"
 import Icons from "uikit/dist/js/uikit-icons"
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 UIkit.use(Icons)
 
