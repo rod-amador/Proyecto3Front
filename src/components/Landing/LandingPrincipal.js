@@ -1,6 +1,7 @@
 import React, {Component} from "react"
 import Info from "./Info"
 import Copyright from "./Copyright"
+import Header from "./Header"
 
 class LandingPrincipal extends Component {
     state= {}
@@ -8,6 +9,7 @@ class LandingPrincipal extends Component {
 
         return (
             <div className="">
+                <Header/>
                 <Info/>
                 <Copyright/>
             </div>

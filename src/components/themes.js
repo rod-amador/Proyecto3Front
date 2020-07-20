@@ -4,12 +4,14 @@ export const themeBlack = {
     backgroundImage: `url(${texturaNegra})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    color: "white"
+    color: "white",
+    fontSize: "1.2rem"
 }
 
 export const themeWhite = {
     backgroundColor: "white",
-    color:"black"
+    color:"black",
+    fontSize: "1.5rem"
 }
 
 export const themeRed = {
@@ -17,7 +19,8 @@ export const themeRed = {
 }
 
 export const themeBlue = {
-    backgroundColor: "#234573"
+    color: "#00A5DB",
+    fontSize: "2.5rem"
 }
 
 export const themeGreen = {
@@ -26,4 +29,4 @@ export const themeGreen = {
 
 
 // black rgb(24, 25, 28)
-//blue rgb(23,45,73),,
+//blue rgb(23,45,73)
