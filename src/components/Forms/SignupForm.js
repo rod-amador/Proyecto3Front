@@ -3,7 +3,7 @@ import {Formik} from "formik"
 import * as Yup from "yup"    
 import ErrorDialog from "./ErrorDialog"
 import {signup} from '../../services/authService';
-import {themeWhite, themeBlack} from "../themes"
+import {themeBlack} from "../themes"
 
 
 // Librerías en uso: Yup y Formik 
@@ -13,7 +13,7 @@ const validationSchema = Yup.object().shape(  {
     name: Yup.string()            
         .required("Campo necesario")
         .min(2, "Tu nombre debe ser más largo")
-        .max(20, "Tu nombre es muy largo"),
+        .max(30, "Tu nombre es muy largo"),
    
     email: Yup.string()
         .email("Correo electrónico inválido")
@@ -153,7 +153,7 @@ export default function SignupForm (){
                     <button type="submit" 
                             disabled={isSubmitting} // no se pueda apretar mientras se sube}
                             className="uk-button uk-button-primary uk-align-center"
-                    >      SUBMIT          </button>
+                    >      SUSCRIBIRME          </button>
                 </div>
 
 

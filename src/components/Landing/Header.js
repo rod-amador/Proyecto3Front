@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import {themeBlack} from "../themes"
+import Count from "./Countdown"
 
 let fondo = require ("../../images/home.jpg")
 
@@ -11,7 +11,7 @@ class Header extends Component {
                 <main className="uk-margin-left uk-margin-right">
 
                         <section style={{backgroundImage:`url(${fondo})`}}
-                                 className="uk-height-viewport uk-background-cover 
+                                 className="uk-width-1-1@s uk-height-viewport uk-background-cover 
                                  uk-background-blend-darken uk-background-primary
                                  uk-flex uk-flex-center uk-flex-middle uk-flex-column" >  
                         
@@ -29,11 +29,10 @@ class Header extends Component {
                                 rutina sin descanso,  durante más de 30 años de tu vida?
                         </p>
 
-                        <button style={themeBlack}
-                                className="uk-button uk-button-secondary uk-margin-large-top uk-margin-bottom">
-                                Adquirir Libro                    
+                        <button className="uk-button uk-button-secondary uk-align-center">
+                              Adquirir Libro                             
                         </button>
-
+                        <Count/>
                         </section>
              
               </main>

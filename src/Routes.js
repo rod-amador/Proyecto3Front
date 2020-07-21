@@ -2,9 +2,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 
-// contenido de landing
 
-import AllHeader from "./components/Header/AllHeader"
 
 // enlaces del navbar
 import Cursos from "./components/NavBar/Cursos";
@@ -25,14 +23,14 @@ import LandingPrincipal from "./components/Landing/LandingPrincipal";
 
 const Routes = ()=> (
     <Switch>
-        <Route exact path= "/"          component={LandingPrincipal}       />
+        <Route exact path= "/"          component={LandingPrincipal}/>
       
         <Route exact path= "/cursos"    component={Cursos}          />
         <Route exact path= "/enlaces"   component={Enlaces}         />
         <Route exact path= "/grupos"    component={Grupos}          />
 
 
-        <Route exact path= "/login"     component={LoginForm}           />
+        <Route exact path= "/login"     component={LoginForm}       />
         <Route exact path= "/signup"    component={SignupForm}      />
 
         <Route exact path= "/books"     component={Books}           />

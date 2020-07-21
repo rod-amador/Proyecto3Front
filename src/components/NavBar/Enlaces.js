@@ -6,17 +6,17 @@ class Enlaces extends Component {
     render() {
       return (
   
-        <section className="uk-align-center uk-text-center">
-          <h1 className="uk-align-center uk-text-center">MIS ENLACES DE AFILIADO</h1>
+        <section className="uk-align-center uk-text-center" style={{themeBlack}}>
+          <h1 className="uk-align-center uk-text-center" style={{themeBlack}}>MIS ENLACES DE AFILIADO</h1>
                     <p className="uk-align-center uk-text-center">
 
                         En esta sección pongo a tu disposición mis enlaces de afiliados <br/> 
                         para que puedas inscribirte y abrir cuentas
                         en las empresas fintech donde puedes invertir.
-                          <br/>
+                       
                           <br/>
                         <strong>   
-                          Muchas de estas empresas te darán un beneficio adicional por inscribirte con mis códigos o enlace de afiliados. 
+                          Muchas de estas empresas te darán un beneficio por usar mis códigos al inscribirte en ellas. 
                         </strong>
                           <br/>
                         Otras, solo me beneficiarán a mi con una pequeña comisión.
@@ -26,7 +26,7 @@ class Enlaces extends Component {
 
             <article style={themeBlack} className="uk-width-1-2@s uk-align-center">
                 <h2 style={{color:"white"}}>SOFIPOS</h2>  
-                  <p>
+                  <p style={{themeBlack}}>
                       Son empresas reguladas por la misma institución que regula y controla a los bancos. <br/>
                       En ellas, tu dinero está protegido por el gobierno hasta por $150,000 pesos.        <br/>
                       Pagan rendimientos de hasta el 12% anual por ahorrar tu dinero con ellas. 

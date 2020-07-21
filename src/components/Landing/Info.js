@@ -4,11 +4,7 @@ import cuentas from "../../images/cuentas.jpg"
 import tdc from "../../images/TDC.jpg"
 import ahorro from "../../images/ahorro.jpg"
 
-
-
-
-
-import {themeWhite, themeBlack, themeGreen, themeBlue} from "../themes"
+import {themeBlack, themeBlue} from "../themes"
 
 class Info extends Component {
     state= {}
@@ -35,15 +31,15 @@ class Info extends Component {
                                             uk-card uk-card-default uk-card-body 
                                             uk-cover-container
                                             ">
-
-                                <canvas width="300px" height="300px"></canvas>
-                                <img src={cuentas} uk-cover="true" />
+                                        <canvas width="300px" height="300px"></canvas>
+                                        <img src={cuentas} alt="No alcanzan las cuentas" uk-cover="true" />
                             </div>
 
                             <div className="uk-width-1-3@m uk-card uk-card-default uk-card-body" style={themeBlack}>
                             <h4 className="uk-text-center" style={themeBlue}>
                                         ¿Estás en Buró de Crédito? <br/> <hr/>
-                                </h4>
+                            </h4>
+
                                 <ul>
                                     <li>Te enseñaré cómo funciona y cómo aprovecharlo a tu favor.               </li> <br/>
                                     <li>Sabrás cómo mejorar tu Score Crediticio rápidamente                     </li> <br/>
@@ -59,7 +55,7 @@ class Info extends Component {
                                             uk-cover-container">
                                                 
                                 <canvas width="300px" height="300px"></canvas>
-                                <img src={ahorro} uk-cover="true" />
+                                <img src={ahorro} uk-cover="true" alt="Ahorrando poco a poco hasta obtener riqueza" />
                             </div>
 
 
@@ -84,7 +80,7 @@ class Info extends Component {
                                             uk-cover-container">
                                                 
                                 <canvas width="300px" height="300px"></canvas>
-                                <img src={tdc} uk-cover="true" />
+                                <img src={tdc} uk-cover="true" alt="Aprende a manejar tus TDC" />
                             </div>
                 </div>                
 

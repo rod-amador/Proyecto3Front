@@ -1,4 +1,10 @@
 import React, { Component } from "react";
+import {themeBlack} from "../themes"
+
+import paginaLibro  from "../../images/rrss1b.jpg"
+import grupoFace    from "../../images/rrss2b.jpg"
+import grupoWhats   from "../../images/rrss3b.jpg"
+import canal        from "../../images/rrss4b.jpg"
 
 class Grupos extends Component {
   
@@ -6,74 +12,55 @@ class Grupos extends Component {
       return (
   
         <div  className="uk-grid uk-margin-left uk-margin-right"     
-              style={{backgroundColor:"black"}}> 
+              style={themeBlack}> 
 
-            <section  style={{color:"blue"}}
-                      className="uk-card-default uk-width-1-1@s uk-align-center
-                                 uk-margin-left uk-margin-right uk-margin-top uk-margin-bottom">
+            <section  className="uk-width-1-1@s ">
 
                       <div className="uk-card-header uk-text-center"> 
-                          <a href= "https://www.facebook.com/lamejorinversiondetuvida" target="_blank" rel="noopener noreferrer"> 
-                                <span uk-icon="icon: facebook; ratio:8"></span> 
+                          <a  href= "https://www.facebook.com/lamejorinversiondetuvida" 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              > 
+                                <img  src={paginaLibro} alt="libro de inversiones" />
                           </a>
                       </div>
                   
-                      <div className="uk-card-body uk-text-center">   
-                            <p> 
-                              Sigue mi Libro de Inversiones en facebook                         <br/>  
-                              <strong> LA MEJOR INVERSIÓN DE TU VIDA SERÁ ESTE LIBRO  </strong> <br/> 
-                            </p>      
-                      </div>
+                     
             </section>
 
 
-            <section  style={{color:"blue"}}
-                      className="uk-card-default uk-width-1-4@s uk-align-center ">
+            <section  className="uk-width-1-3@s">
 
-                      <div  className="uk-card-header uk-text-center uk-margin-right"> 
+                      <div  className="uk-card-header"> 
                             <a href="https://www.facebook.com/groups/aprendiendoainvertirmx" target="_blank" rel="noopener noreferrer">   
-                                <span uk-icon="icon: facebook; ratio:8"></span>       
+                            <img  src={grupoFace} alt="grupo de inversiones facebook" />
                             </a>
                             
                       </div>
 
-                      <div  className="uk-card-body uk-text-center uk-margin-right">   
-                            <p>
-                                Únete a mi grupo                              
-                                <strong> APRENDIENDO A INVERTIR MX </strong> 
-                                Si tienes una duda, entra al grupo            
-                                y con gusto te ayudaré a resolverla.        
-                            </p>      
-                      </div>
+                      
             </section>
 
 
-            <section style={{color:"green"}}
-                     className="uk-card-default uk-width-1-4@s uk-align-center">
+            <section className="uk-width-1-3@s">
 
-                    <div className="uk-card-header uk-text-center uk-margin-right"> 
+                    <div className="uk-card-header"> 
                         <a className="uk-link-muted" href="https://chat.whatsapp.com/KFaBYkixl5mJDXJH1zaran" target="_blank" rel="noopener noreferrer"> 
-                                <span style={{color:"green"}} uk-icon="icon: whatsapp; ratio:8">    </span>         
+                        <img  src={grupoWhats}  alt="grupo de inversiones Whatsapp" />        
                         </a>
                     </div>
 
-                    <div className="uk-card-body uk-text-center uk-margin-right">   
-                          <p> 
-                            Únete al grupo de whatsapp              <br/>
-                            para recibir apoyo en temas financieros <br/> 
-                            
-                          </p>      
-                    </div>
+                    
             </section>
 
 
-            <section  style={{color:"red"}}
-                      className="uk-card-default uk-width-1-4@s uk-align-center ">
+            <section className="uk-width-1-3@s">
 
-                      <div className="uk-card-header uk-text-center uk-margin-right"> <span uk-icon="icon: youtube; ratio:8"> </span>   </div>
-                      <div className="uk-card-body uk-text-center uk-margin-right">   
-                            <p> <strong>APRENDIENDO A INVERTIR </strong> <br/>En Construcción...                          </p>      
-                      </div>
+                   <div className="uk-card-header"> 
+                        <a className="uk-link-muted" href="https://www.youtube.com/channel/UCeKUFscUC_G1I0VSgC9Gj1g" target="_blank" rel="noopener noreferrer"> 
+                        <img  src={canal} alt="canal de youtube en construcción" />        
+                        </a>
+                    </div>
             </section>
 
         </div>

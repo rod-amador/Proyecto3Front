@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import {themeWhite, themeBlack} from "../themes"
+import {themeBlack} from "../themes"
 
 //componente tonto --> solo recibira props .
 

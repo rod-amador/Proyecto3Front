@@ -1,7 +1,6 @@
 import React, {Component} from "react"
-import {themeBlack} from "../themes"
 
-let Free = require("../../images/SellLikeCrazy.pdf")
+let Free = require("../../images/Las5MejoresEstrategiasParaMejorarTuScoreCrediticio.pdf")
 let fondo = require("../../images/confetti.jpg")
 
 class Gratis extends Component {
@@ -29,9 +28,7 @@ class Gratis extends Component {
                         style={{fontSize: "2rem",
                                 color:"white",
                         }}> 
-                        
-                        Descargar PDF 
-                        
+                        Descargar PDF   
                     </a>
 
                 </button>

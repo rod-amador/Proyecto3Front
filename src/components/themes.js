@@ -1,4 +1,4 @@
-let texturaNegra = require ("../images/textura.jpeg")
+let texturaNegra = require ("../images/textura3.jpg")
 
 export const themeBlack = {
     backgroundImage: `url(${texturaNegra})`,
@@ -23,10 +23,21 @@ export const themeBlue = {
     fontSize: "2.5rem"
 }
 
+export const backBlue = {
+    BackgroundColor: "#00A5DB",
+    color:"white",
+    fontSize: "2.5rem"
+}
+
 export const themeGreen = {
     color: "#38b811"
 }
 
+export const themeTitle = {
+    backgroundColor: "white",
+    color:"#00A5DB",
+    fontSize: "1.5rem"
+}
 
 // black rgb(24, 25, 28)
 //blue rgb(23,45,73)

@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { login, signup } from "../../services/authService";
 import AppContext from "../../AppContext";
-import {themeWhite, themeBlack} from "../../components/themes"
+import {themeBlack} from "../../components/themes"
 
 
 class LoginForm extends Component {

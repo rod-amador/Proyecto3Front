@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import OneBook from "./OneBook"
 import {getBooks} from "../../services/booksService"
-import {themeBlack, themeWhite} from "../themes"
+import {themeWhite} from "../themes"
 
 class BookService extends Component {
     state = {   books: []  };

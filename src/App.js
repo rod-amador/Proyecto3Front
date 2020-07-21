@@ -5,9 +5,6 @@ import Routes from './Routes';
 import AppContext from "./AppContext"
 import { logout } from "./services/authService";
 
-import Header from './components/Header/Header';
-import { Paragraph1, Paragraph2, Paragraph3, Paragraph4, ParagraphTop } from './components/Paragraph/Paragraph';
-
 
 //clase para poder usar estados
 
@@ -32,11 +29,6 @@ class App extends Component {
             <div>
               <NavBar/>
               <Routes/>
-             
-             
-              
-
-              
             </div>
 
       </AppContext.Provider>

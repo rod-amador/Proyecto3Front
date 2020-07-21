@@ -16,6 +16,7 @@
     "react-player": "^2.1.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-uikit3": "^0.14.0",
     "uikit": "^3.5.3",
     "uikit-react": "^3.0.20",
     "yup": "^0.29.1"
