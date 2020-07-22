@@ -1,7 +1,8 @@
 import React, {Component} from "react";
 import OneBook from "./OneBook"
 import {getBooks} from "../../services/booksService"
-import {themeWhite} from "../themes"
+
+let fondo = require("../../images/foco.jpg")
 
 class BookService extends Component {
     state = {   books: []  };
@@ -20,22 +21,51 @@ class BookService extends Component {
 
     render () {
         return (
-            <section className="uk-section uk-text-justify" style={themeWhite}>  
-                <h3 className="uk-text-center" style={{color:"black"}}>LIBROS</h3>
-                <p className="uk-margin-left uk-margin-right">
-                    En esta sección te recomendaré libros que potencializarán tanto tus finanzas como
-                    todas las áreas de tu vida, te enseñarán todo lo que necesitas saber para aumentar
-                    tu productividad y mejorar los hábitos que tienes, lo que aumentará el éxito en 
-                    todo lo que te propongas. Son libros muy interesantes, altamente útiles y que más
-                    allá si los recomiendo o nó, cualquier persona saldrá beneficiada al terminarlos.
-                 </p>
-              
-                    {this.state.books.length > 0    ? 
+            
+            <section className="uk-margin-left uk-margin-right">
+
+                <div style={{backgroundImage:`url(${fondo})`}}
+                        className="uk-width-1-1@s uk-height-viewport uk-background-cover 
+                        uk-background-blend-darken uk-background-primary
+                        uk-flex uk-flex-center uk-flex-middle uk-flex-column">
+                    
+                    <h1 style={{color: "white", fontSize: "3rem"}} className="uk-text-center ">
+                           <strong> Libros útiles que recomiendo <br/> después del mío </strong>
+                    </h1>
+
+                    <p  className="uk-margin-top uk-width-1-2@s uk-text-justify" 
+                        style={{color: "white", fontSize: "1.5rem"}}> 
+
+                        En esta sección te recomendaré libros que potencializarán tanto tus finanzas como
+                        todas las áreas de tu vida, te enseñarán todo lo que necesitas saber para aumentar
+                        tu productividad y mejorar los hábitos que tienes, lo que aumentará el éxito en 
+                        todo lo que te propongas.
+                    </p>
+
+                    </div> 
+
+                    {this.state.books.length > 0 ? 
                         this.state.books.map(   (book, index) => <OneBook key={index} {...book}  /> ) 
                         : 
-                        <div className="uk-alert-primary uk-text-center" uk-alert="true"> <p> No hay libros </p> </div> }
+                        <div className="uk-alert-primary uk-text-center" uk-alert="true"> <p> No estás conectado a la DB </p> </div> }
+             </section>
+            
+            
+          
 
-            </section>
+
+
+
+
+
+
+
+
+
+              
+                   
+
+        
         );
     }
 }

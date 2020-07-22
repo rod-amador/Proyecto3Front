@@ -2,6 +2,8 @@ import React, {Component} from "react";
 import OneVideo from "./OneVideo"
 import {getVideos} from "../../services/videosService"
 
+let fondo = require("../../images/puzzle.jpg")
+
 class VideoService extends Component {
     state = {   videos: []  };
 
@@ -19,15 +21,33 @@ class VideoService extends Component {
 
     render () {
         return (
-            <section className="uk-section uk-text-justify ">  
+            <section className="uk-margin-left uk-margin-right"> 
+
+                <div style={{backgroundImage:`url(${fondo})`}}
+                     className="uk-width-1-1@s uk-height-viewport uk-background-cover 
+                        uk-background-blend-darken uk-background-primary
+                        uk-flex uk-flex-center uk-flex-middle uk-flex-column">
+                    
+                    <h1 style={{color: "white", fontSize: "3rem"}} className="uk-text-center ">
+                           <strong> Videos Útiles para iniciar a invertir  </strong>
+                    </h1>
+
+                    <p  className="uk-margin-top uk-width-1-2@s uk-text-justify" 
+                        style={{color: "white", fontSize: "1.5rem"}}> 
+
+                    Veremos unos cuantos videos que te serán útiles para adentrarte
+                    más en el mundo de las finanzas a inversiones. 
+                    
+                    Algunos tratarán de educación, otros tratarán de finanzas y algunos más serán prácticos. Todo esto con el fin
+                    de que te nutras y aprendas a distinguir un negocio exitoso de posibles estafas. 
+                    
+                    A mayor conocimiento, menor riesgo correrás en el mundo de las inversiones.
+
+                
+                    </p>
+
+                </div> 
             
-                <h3 className="uk-text-center">SECCIÓN DE VIDEOS</h3>
-                <p className="uk-margin-left uk-margin-right">
-                    En esta sección veremos unos cuantos videos que te serán útiles para adentrarte
-                    más en el mundo de las finanzas a inversiones. Algunos tratarán de educación,
-                    otros tratarán de finanzas y algunos más serán prácticos. Todo esto con el fin
-                    de que te nutras y aprendas a distinguir un negocio exitoso de las estafas.
-                 </p>
               
                     {this.state.videos.length > 0    ? 
                         this.state.videos.map(   (video, index) => <OneVideo key={index} {...video}  /> ) 

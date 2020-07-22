@@ -13,7 +13,7 @@ const validationSchema = Yup.object().shape(  {
     name: Yup.string()            
         .required("Campo necesario")
         .min(2, "Tu nombre debe ser más largo")
-        .max(30, "Tu nombre es muy largo"),
+        .max(40, "Tu nombre es muy largo"),
    
     email: Yup.string()
         .email("Correo electrónico inválido")
@@ -29,22 +29,25 @@ const validationSchema = Yup.object().shape(  {
 
 ////////////FORMULARIO
 
-export default function SignupForm (){
-   
+export default class Signup extends React.Component {
+    render() {
+ 
+    
     return (
     <div className="uk-text-center uk-align-center uk-padding uk-width-1-2" style={themeBlack}>
         
     <Formik
-        //aqui estan los valores del formulario (Schemas)
+        
         initialValues= { {name: "", email: "", origin: "", password:""    }}
         validationSchema={validationSchema}
         
         onSubmit= { (values, {setSubmitting, resetForm} )=>{
             setSubmitting(true)
             signup(values)
-            alert("Usuario creado con éxito");
+            alert("Usuario creado con éxito.");
             resetForm();
-            setSubmitting(false)
+            const { history } = this.props;
+            history.push('/login');
            
         }}
        
@@ -164,5 +167,5 @@ export default function SignupForm (){
     </div>
 
     
-    )}
+    )}}
 
