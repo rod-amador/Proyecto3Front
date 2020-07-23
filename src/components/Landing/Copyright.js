@@ -15,7 +15,7 @@ class Copyright extends Component {
                    </div>
 
                    <div className="uk-width-1-2@s uk-flex uk-flex-center">
-                        <p>  Únete a nuestros dos grupos:</p>
+                        <p> Sigue nuestras Redes Sociales:</p>
                                 <a      href= "https://www.facebook.com/groups/aprendiendoainvertirmx" target="_blank" rel="noopener noreferrer"> 
                                     <span uk-icon="icon: facebook"></span> 
                                 </a>

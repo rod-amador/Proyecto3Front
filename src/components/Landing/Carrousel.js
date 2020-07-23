@@ -2,9 +2,9 @@ import React, {Component} from "react"
 import {Slideshow, Cover} from 'react-uikit3';
 
 
-let ciclo2 =        require("../../images/ciclo2.jpg")
-let reloj2 = require("../../images/reloj2.jpg")
-let bienes2 = require("../../images/bienes2.jpg")
+let ciclo2 =    require("../../images/ciclo2.jpg")
+let reloj2 =    require("../../images/reloj2.jpg")
+let bienes2 =   require("../../images/bienes2.jpg")
 
 class Carrousel extends Component {
     state= {}
