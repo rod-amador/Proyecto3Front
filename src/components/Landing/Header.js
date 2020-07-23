@@ -30,7 +30,7 @@ class Header extends Component {
                         </p>
 
                         <button className="uk-button uk-button-secondary uk-align-center">
-                              Adquirir Libro                             
+                                        <strong>        Adquirir Libro </strong>                                
                         </button>
                         <Count/>
                         </section>

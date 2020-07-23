@@ -6,6 +6,9 @@ import Header from "./Header"
 import {IngresoPasivo, IngresoActivo} from "./TiposIngresos"
 import Carrousel from "./Carrousel"
 import FreeOffer from "./FreeOffer"
+import Info2 from "./info2"
+import Call from "./Call"
+import LastMsg from "./LastMsg"
 
 
 class LandingPrincipal extends Component {
@@ -22,6 +25,9 @@ class LandingPrincipal extends Component {
                 <Carrousel/>
                 <IngresoActivo/>
                 <IngresoPasivo/>
+                <Info2/>
+                <Call/>
+                <LastMsg/>
                
                 <Copyright/>
             </div>
