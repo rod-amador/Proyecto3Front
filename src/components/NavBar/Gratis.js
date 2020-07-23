@@ -1,6 +1,6 @@
 import React, {Component} from "react"
 
-let Free = require("../../images/Las5MejoresEstrategiasParaMejorarTuScoreCrediticio.pdf")
+let Free = require("../../images/regalos/Las5MejoresEstrategiasParaMejorarTuScoreCrediticio.pdf")
 let fondo = require("../../images/confetti.jpg")
 
 class Gratis extends Component {

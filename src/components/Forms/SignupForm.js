@@ -5,7 +5,7 @@ import ErrorDialog from "./ErrorDialog"
 import {signup} from '../../services/authService';
 import {themeBlack} from "../themes"
 
-
+let fondo = require ("../../images/fondoSignup.jpg")
 // Librerías en uso: Yup y Formik 
 // formik para enviar // Yup para validar
 
@@ -34,9 +34,16 @@ export default class Signup extends React.Component {
  
     
     return (
-    <div className="uk-text-center uk-align-center uk-padding uk-width-1-2" style={themeBlack}>
-        
-    <Formik
+    
+    
+    <section style={{backgroundImage:`url(${fondo})`}}
+            className="uk-width-1-1@s uk-height-viewport uk-background-cover 
+            uk-background-blend-darken uk-background-primary
+            uk-flex uk-flex-center uk-flex-middle uk-flex-column" >  
+
+        <div className="uk-text-center uk-align-center uk-padding uk-width-1-2" style={themeBlack}>
+            
+        <Formik
         
         initialValues= { {name: "", email: "", origin: "", password:""    }}
         validationSchema={validationSchema}
@@ -165,7 +172,7 @@ export default class Signup extends React.Component {
         
     </Formik>
     </div>
-
+                            </section>
     
     )}}
 

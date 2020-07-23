@@ -5,6 +5,9 @@ import { login, signup } from "../../services/authService";
 import AppContext from "../../AppContext";
 import {themeBlack} from "../../components/themes"
 
+let fondo = require("../../images/fondoLogin.jpg")
+
+
 
 class LoginForm extends Component {
   static contextType = AppContext;
@@ -40,7 +43,11 @@ class LoginForm extends Component {
     const isLogin = this.props.location.pathname === "/login";
 
     return (
-      <section className="uk-section" >
+      <section style={{backgroundImage:`url(${fondo})`}}
+      className="uk-width-1-1@s uk-height-viewport uk-background-cover 
+      uk-background-blend-darken uk-background-primary
+      uk-flex uk-flex-center uk-flex-middle uk-flex-column" >  
+
         <div className="uk-container uk-flex uk-flex-center uk-width-1-3 uk-padding" style={themeBlack}>
           <article className="">
             <h3 className="uk-text-center uk-margin-medium-right" style={{color:"white"}}>{isLogin ? "Login" : "Signup"}</h3>
