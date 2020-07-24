@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {themeBlack} from "../themes"
 
-import paginaLibro  from "../../images/rrss1b.jpg"
+import paginaLibro  from "../../images/rrss1.jpg"
 import grupoFace    from "../../images/rrss2b.jpg"
 import grupoWhats   from "../../images/rrss3b.jpg"
 import canal        from "../../images/rrss4b.jpg"
