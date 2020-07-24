@@ -48,12 +48,12 @@ class LoginForm extends Component {
       uk-background-blend-darken uk-background-primary
       uk-flex uk-flex-center uk-flex-middle uk-flex-column" >  
 
-        <div className="uk-container uk-flex uk-flex-center uk-width-1-3 uk-padding" style={themeBlack}>
+        <div className="uk-container uk-flex uk-flex-center uk-width-1-3@s uk-padding" style={themeBlack}>
           <article className="">
             <h3 className="uk-text-center uk-margin-medium-right" style={{color:"white"}}>{isLogin ? "Login" : "Signup"}</h3>
             
             <form   onSubmit={this.handleSubmit}
-                    className="uk-width-1-1 uk-form-stacked uk-flex uk-flex-center uk-flex-column">
+                    className="uk-width-1-1@s uk-form-stacked uk-flex uk-flex-center uk-flex-column">
 
               <div className="uk-margin">
                     <label className="uk-form-label" htmlFor="email" style={{color:"white"}}> Email:  </label>

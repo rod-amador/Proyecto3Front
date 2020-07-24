@@ -27,12 +27,13 @@ class Info extends Component {
                                 </ul>
                             </div>
 
-                            <div className="uk-width-1-3@s 
+                            <div className="uk-width-1-3@s
+                                            uk-visible@s 
                                             uk-card uk-card-default uk-card-body 
                                             uk-cover-container
                                             ">
                                         <canvas width="300px" height="300px"></canvas>
-                                        <img src={cuentas} alt="No alcanzan las cuentas" uk-cover="true" />
+                                        <img src={cuentas} alt="No alcanzan las cuentas" uk-cover="true" className="" />
                             </div>
 
                             <div className="uk-width-1-3@m uk-card uk-card-default uk-card-body" style={themeBlack}>
@@ -51,6 +52,7 @@ class Info extends Component {
                 <div className="uk-flex uk-flex-center uk-align-center uk-margin uk-width-expand " uk-grid="true" >
 
                             <div className="uk-width-1-3@s 
+                                            uk-visible@s
                                             uk-card uk-card-default uk-card-body 
                                             uk-cover-container">
                                                 
@@ -75,7 +77,8 @@ class Info extends Component {
                                 </ul>
                             </div>
 
-                            <div className="uk-width-1-3@s 
+                            <div className="uk-width-1-3@s
+                                            uk-visible@s 
                                             uk-card uk-card-default uk-card-body 
                                             uk-cover-container">
                                                 

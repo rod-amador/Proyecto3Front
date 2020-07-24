@@ -41,7 +41,7 @@ export default class Signup extends React.Component {
             uk-background-blend-darken uk-background-primary
             uk-flex uk-flex-center uk-flex-middle uk-flex-column" >  
 
-        <div className="uk-text-center uk-align-center uk-padding uk-width-1-2" style={themeBlack}>
+        <div className="uk-text-center uk-align-center uk-padding uk-width-1-2@s" style={themeBlack}>
             
         <Formik
         

@@ -17,6 +17,7 @@ class Info2 extends Component {
                 <div className="uk-flex uk-flex-center uk-align-center uk-margin uk-width-expand " uk-grid="true">
 
                             <div className="uk-width-1-2@s 
+                                            uk-visible@s
                                             uk-card uk-card-default uk-card-body 
                                             uk-cover-container
                                             ">
@@ -55,6 +56,7 @@ class Info2 extends Component {
                         </div>
 
                         <div className="uk-width-1-2@s 
+                                        uk-visible@s
                                         uk-card uk-card-default uk-card-body 
                                         uk-cover-container
                                         ">
