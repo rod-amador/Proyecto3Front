@@ -16,7 +16,7 @@ class Call extends Component {
                     <section className="uk-margin-left uk-margin-right uk-flex uk-flex-center" uk-grid="true">
                         <ul className="uk-list">
                                 <li className="uk-grid-width-1-3@s uk-list-muted uk-text-center">Mejora tu situación financiera.                               </li>
-                                <li className="uk-grid-width-1-3@s uk-text-center">Distingue las oportunidades de las estafas.                   </li>
+                                <li className="uk-grid-width-1-3@s uk-text-center">Diferencía las oportunidades de las estafas.                   </li>
                                 <li className="uk-grid-width-1-3@s uk-text-center">Benefíciate de manera inmediata con los enlaces de afiliados. </li>
                         </ul>
                     </section> <br/>

@@ -30,10 +30,10 @@ class Info2 extends Component {
                                         Aprende a Invertir <hr/>
                                 </h4>
                                 <ul>
-                                    <li>Aprende a pensar y razonar como lo hacen los ricos      </li> <br/>
-                                    <li>Vuélvete un experto al analizar riesgo y diversificando </li> <br/>
-                                    <li>Invierte en bolsa y en bienes raíces                    </li> <br/>
-                                    <li>Obtén rendimientos de al menos 12% anual sin riesgo     </li> <br/>
+                                    <li>Aprende a pensar y razonar como lo hacen los ricos           </li> <br/>
+                                    <li>Vuélvete un experto al analizar riesgos                      </li> <br/>
+                                    <li>Invierte en bolsa y en bienes raíces                         </li> <br/>
+                                    <li>Obtén rendimientos de al menos 12% anual con riesgo mínimo   </li> <br/>
                                 </ul>
                             </div>
                 </div>
@@ -48,7 +48,7 @@ class Info2 extends Component {
                                     Aprende la Verdad del Sistema Financiero Mexicano <hr/>
                             </h4>
                             <ul>
-                                <li>Los Bancos NO son un lugar seguro para tu dinero    </li> <br/>
+                                <li>Los Bancos NO son un buen lugar para tu dinero    </li> <br/>
                                 <li>Un AFORE jamás te garantizará un retiro digno       </li> <br/>
                                 <li>Una hipoteca puede ser el peor error de tu vida     </li> <br/>
                                 <li>¿Qué es mejor: rentar o comprar?                    </li> <br/>

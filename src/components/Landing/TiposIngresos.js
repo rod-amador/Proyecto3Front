@@ -101,7 +101,7 @@ export const IngresoPasivo = () => {
                                                 uk-child-width-1-2@s uk-flex-first@m       ">
 
                                     Es el ingresos que no depende de tu tiempo o esfuerzo para generar dinero.
-                                    Este tipo de ingreso se generacon inversiones. Te ayudará a dejar
+                                    Este tipo de ingreso se genera con inversiones. Te ayudará a dejar
                                     de depender de un trabajo fijo para subsistir. 
                                     Es en este tipo de ingresos en el que radica la libertad financiera. 
                                                         

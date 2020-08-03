@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import Count from "./Countdown"
 
 let fondo = require ("../../images/home.jpg")
 
@@ -30,9 +29,12 @@ class Header extends Component {
                         </p>
 
                         <button className="uk-button uk-button-secondary uk-align-center">
-                                        <strong>        Adquirir Libro </strong>                                
+                                <a      href="https://amzn.to/2D7E3wz" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" ><strong>Adquirir Libro </strong> 
+                                </a>                               
                         </button>
-                        <Count/>
+                      
                         </section>
              
               </main>

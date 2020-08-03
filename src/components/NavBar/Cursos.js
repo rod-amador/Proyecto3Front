@@ -22,10 +22,10 @@ class Cursos extends Component {
 
                             <ul className="uk-list uk-list-collapse" >                           
                                 <li> <span className="uk-margin-small-right" uk-icon="check"></span>    A potencializar tus finanzas                                   </li>
-                                <li> <span className="uk-margin-small-right" uk-icon="check"></span>     A crear múltiples fuentes de ingresos                          </li>
+                                <li> <span className="uk-margin-small-right" uk-icon="check"></span>    A crear múltiples fuentes de ingresos                          </li>
                                 <li> <span className="uk-margin-small-right" uk-icon="check"></span>    Dónde y cómo invertir para multiplicar tus ingresos            </li>
                                 <li> <span className="uk-margin-small-right" uk-icon="check"></span>    A obtener ingresos pasivos permanentes                         </li>
-                                <li> <span className="uk-margin-small-right" uk-icon="check"></span>    A jugar con créditos y deudas para hacerte de riqueza propia   </li> <br/>
+                                <li> <span className="uk-margin-small-right" uk-icon="check"></span>    A usar con créditos y deudas para hacerte de riqueza propia   </li> <br/>
                             </ul> 
 
                            

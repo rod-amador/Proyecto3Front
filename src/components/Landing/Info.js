@@ -44,7 +44,7 @@ class Info extends Component {
                                 <ul>
                                     <li>Te enseñaré cómo funciona y cómo aprovecharlo a tu favor.               </li> <br/>
                                     <li>Sabrás cómo mejorar tu Score Crediticio rápidamente                     </li> <br/>
-                                    <li>Podrás adquirir Tarjetas de Crédito aún estando en Buró Crediticio      </li> 
+                                    <li>Podrás adquirir Tarjetas de Crédito aún estando en Buró de Crédito      </li> 
                                 </ul>
                             </div>
                 </div>
